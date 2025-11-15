@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resguardo Indígena</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+
+</head>
+
+<body>
+    <header>
+        <h2>Indígena Rincon Bodega </h2>
+        <nav>
+            <a href="#historia">Historia</a>
+            <a href="#territorio">Territorio</a>
+            <a href="#autoridades">Autoridades</a>
+            <a href="#contacto">Contacto</a>
+            <a href="/paginas/multimedia.html">Multimedia</a>
+            <a href="/paginas/noticias.html">Noticias</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="hero">
+        <div class="contenedor-hero">
+            <h1>Bienvenidos al Resguardo Indidigena Rincon Bodega</h1>
+            <p>Guardianes del territorio, la cultura y la memoria ancestral.</p>
+            <img src="img/logo.png" alt="Logo del Resguardo" width="150">
+        </div>
+
+    </div>
+
+    <section class="section" id="historia">
+        <div class="card">
+            <h2>Historia</h2>
+            <p id="parrafohistoria"></p>
+
+            <script>
+                fetch("textos/historia.txt")
+                    .then(res => res.text())
+                    .then(data => {
+                        document.getElementById("parrafohistoria").textContent = data;
+                    })
+                    .catch(err => console.error(err));
+            </script>
+
+        </div>
+    </section>
+
+    <section class="section" id="territorio">
+        <div class="card">
+            <h2>Territorio</h2>
+            <p id="parrafoubicacion"></p>
+
+            <script>
+                fetch("textos/ubicacion.txt")
+                    .then(res => res.text())
+                    .then(data => {
+                        document.getElementById("parrafoubicacion").textContent = data;
+                    })
+                    .catch(err => console.error(err));
+            </script>
+            <div style="width: 100%; display: flex; justify-content: center; margin: 20px 0;">
+                <a href="/paginas/mapa.html" style="padding: 10px 20px; 
+              background-color: #2d6a4f; 
+              color: white; 
+              text-decoration: none; 
+              border-radius: 5px; 
+              transition: background-color 0.3s;">
+                    Ver Mapa
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="autoridades">
+        <div class="card">
+            <h2>Autoridad</h2>
+            <p id="parrafoautoridad"></p>
+
+            <script>
+                fetch("textos/autoridad.txt")
+                    .then(res => res.text())
+                    .then(data => {
+                        document.getElementById("parrafoautoridad").textContent = data;
+                    })
+                    .catch(err => console.error(err));
+            </script>
+        </div>
+    </section>
+
+    <section class="section" id="contacto">
+        <div class="card">
+            <h2>Contacto</h2>
+            <p>
+                ... Información de contacto aquí ...
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Resguardo Indígena — Todos los derechos reservados
+    </footer>
+
+</body>
+
+</html>

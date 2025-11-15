@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa del Cabildo Indígena Rincon Bodega</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2d6a4f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1b4332;
+            margin-top: 20px;
+        }
+
+        .map-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        iframe {
+            width: 90%;
+            height: 500px;
+            border: 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .info-lugar {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .info-lugar h3 {
+            margin-top: 0;
+            color: #2d6a4f;
+        }
+
+        .info-lugar img,
+        .info-lugar video {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #1b4332;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .h1 {
+            text-decoration: none;
+            /* Quita subrayado */
+            color: white;
+            /* Color del texto */
+            background-color: #2d6a4f;
+            /* Color de fondo */
+            padding: 10px 20px;
+            /* Espacio interno */
+            border-radius: 5px;
+            /* Bordes redondeados */
+            display: inline-block;
+            /* Para que respete padding */
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><a href="../index.html" class="h1">Resguardo Indígena Rincon Bodega</a></h1>
+        <nav>
+            <a href="#mapa">Mapa</a>
+            <a href="#info">Información</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="mapa">
+        <h2>Ubicación del Resguado Indigena Rincon Bodega</h2>
+        <div id="map" class="map-container"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1199.1617920168349!2d-75.15210607149518!3d3.4676153384303787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zM8KwMjgnMDMuNCJOIDc1wrAwOScwNS4zIlc!5e1!3m2!1ses!2sco!4v1763245688371!5m2!1ses!2sco"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </section>
+
+    <section id="info">
+        <h2>Información de Lugares Importantes</h2>
+        <div class="info-lugar">
+            <h3>Centro Cultural del Resguardo</h3>
+            <p>En este lugar se realizan ceremonias, talleres y reuniones comunitarias importantes.</p>
+            <img src="../img/centro_cultural.jpg" alt="Centro Cultural">
+            <video controls>
+                <source src="../videos/ceremonia.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+
+        <div class="info-lugar">
+            <h3>Territorio Tradicional</h3>
+            <p>Zona donde se realizan prácticas culturales ancestrales y conservación del territorio.</p>
+            <img src="../img/territorio.jpg" alt="Territorio">
+        </div>
+    </section>
+
+    <section id="contacto" style="padding:20px; text-align:center;">
+        <h2>Contacto</h2>
+        <p>Correo: ...</p>
+        <p>Teléfono: ...</p>
+    </section>
+
+    <footer>
+        © 2025 Cabildo Indígena — Todos los derechos reservados
+    </footer>
+</body>
+
+</html>

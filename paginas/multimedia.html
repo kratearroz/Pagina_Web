@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resguardo Indígena Rincon Bodega</title>
+    <link rel="stylesheet" href="../estilos/styles.css">
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2d6a4f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            margin: 10px 0;
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .galeria img{
+            width: 300px;
+            /* ancho fijo */
+            height: 200px;
+            /* alto fijo */
+            object-fit: cover;
+            /* recorta sin deformar */
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .galeria img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, z-index 0.3s ease;
+            cursor: pointer;
+        }
+
+        .galeria img:hover {
+            transform: scale(2);
+            /* Aumenta la imagen */
+            z-index: 10;
+            /* La coloca sobre las demás */
+            position: relative;
+        }
+
+        footer {
+            background-color: #1b4332;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .h1 {
+            text-decoration: none;
+            /* Quita subrayado */
+            color: white;
+            /* Color del texto */
+            background-color: #2d6a4f;
+            /* Color de fondo */
+            padding: 10px 20px;
+            /* Espacio interno */
+            border-radius: 5px;
+            /* Bordes redondeados */
+            display: inline-block;
+            /* Para que respete padding */
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2><a href="../index.html" class="h1">Resguardo Indígena Rincon Bodega</a></h2>
+        <nav>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="galeria">
+        <h2 style="text-align:center;">Galería de Fotos y Videos</h2>
+        <div class="galeria">
+            <!-- Imagen -->
+            <img src="../img/img2.jpeg" alt="Foto 1">
+            <img src="../img/img3.jpeg" alt="Foto 2">
+            <img src="../img/img4.png" alt="Foto 3">
+            <img src="../img/img5.jpeg" alt="Foto 4">
+
+            <!-- Videos -->
+            <video controls>
+                <source src="../videos/video1.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+
+            <video controls>
+                <source src="../videos/video2.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+    </section>
+
+    <section id="contacto" style="padding:20px;text-align:center;">
+        <h2>Contacto</h2>
+        <p>Correo: ...</p>
+        <p>Teléfono: ...</p>
+    </section>
+
+    <footer>
+        © 2025 Resguardo Indígena — Todos los derechos reservados
+    </footer>
+
+</body>
+
+</html>
